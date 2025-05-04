@@ -1,21 +1,18 @@
-// Array com os dados dos vídeos
 const videos = [
     {
         title: "Título",
-        // thumbnail: "../assets/images/header.png",
+        thumbnail: "../assets/images/header-vid.jpg",
         videoUrl: "https://www.youtube.com/embed/VIDEO_ID_1",
         description: "Descrição",
     },
     {
         title: "Título",
-        // thumbnail: "../assets/images/header.png",
+        thumbnail: "../assets/images/header-vid.jpg",
         videoUrl: "https://www.youtube.com/embed/VIDEO_ID_1",
         description: "Descrição",
     },
-    // Adicione mais vídeos aqui
 ];
 
-// Função para criar os elementos do portfólio
 function createPortfolioItems() {
     const portfolioGrid = document.querySelector('.portfolio-grid');
     
@@ -40,7 +37,6 @@ function createPortfolioItems() {
     });
 }
 
-// Função para lidar com o scroll
 function handleScroll() {
     const header = document.querySelector('header');
     const hero = document.querySelector('.hero');
@@ -55,7 +51,6 @@ function handleScroll() {
     }
 }
 
-// Função para inicializar o site
 function init() {
     createPortfolioItems();
     
