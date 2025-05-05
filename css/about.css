@@ -1,0 +1,51 @@
+.about {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding: 3rem 1.5rem;
+    margin: 0 auto 3rem auto;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem 1rem;
+        margin: 0 auto 2rem auto;
+    }
+    .about h2 {
+        font-size: 1.8rem;
+    }
+    .about p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 1.5rem 1rem;
+        margin: 0 auto 1.5rem auto;
+    }
+    .about h2 {
+        font-size: 1.5rem;
+    }
+    .about p {
+        font-size: 0.9rem;
+    }
+}

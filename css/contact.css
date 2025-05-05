@@ -1,0 +1,40 @@
+.contact {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        gap: 1.5rem;
+    }
+    .social-links a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        gap: 1rem;
+    }
+    .social-links a {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.5rem;
+    }
+}
