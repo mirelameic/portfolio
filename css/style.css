@@ -224,10 +224,6 @@ a { color: inherit; }
 .theme-toggle__icon--moon { opacity: 0; transform: scale(0.5) rotate(-40deg); }
 :root[data-theme="dark"] .theme-toggle__icon--sun { opacity: 0; transform: scale(0.5) rotate(40deg); }
 :root[data-theme="dark"] .theme-toggle__icon--moon { opacity: 1; transform: scale(1) rotate(0deg); }
-.chrome__meta .tag:first-child { display: none; }
-@media (min-width: 640px) {
-  .chrome__meta .tag:first-child { display: inline; }
-}
 
 /* ===== Layout scaffolding ===== */
 main { padding: 0 var(--edge); }
