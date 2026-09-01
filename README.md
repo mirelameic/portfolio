@@ -1,5 +1,7 @@
 # Mirela Mei — Portfolio
 
+**Live at [mirelameic.com](https://mirelameic.com)**
+
 A personal portfolio site with an editorial, blueprint-diagram aesthetic — built with plain HTML, CSS, and JavaScript (no framework, no build step, no dependencies).
 
 Sections: intro, about, experience (interactive timeline), and contact. Includes light/dark themes, animated SVG diagrams, and a bit of grain texture for a more physical feel.

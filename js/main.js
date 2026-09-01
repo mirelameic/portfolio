@@ -1,3 +1,21 @@
+// Scroll hint — fades out once the page starts scrolling
+(function () {
+  const hint = document.querySelector('.hero__scroll');
+  if (!hint) return;
+  let ticking = false;
+  const update = () => {
+    hint.classList.toggle('is-hidden', window.scrollY > 40);
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+  update();
+})();
+
 // Theme toggle
 (function () {
   const root = document.documentElement;
