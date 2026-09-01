@@ -1,4 +1,4 @@
-# Mirela Mei — Portfolio
+# Portfolio
 
 **Live at [mirelameic.com](https://mirelameic.com)**
 
@@ -19,7 +19,7 @@ Then open `http://localhost:8420/` in a browser.
 ## Structure
 
 ```
-index.html       all page markup
+index.html        all page markup
 css/style.css     all styles (theming, layout, animations)
 js/main.js        theme toggle, scroll reveals, interactive diagrams
 assets/           favicon and background texture (SVG)
