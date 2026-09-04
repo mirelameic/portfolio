@@ -170,6 +170,39 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
   });
 })();
 
+// Side nav — highlight the section currently in view
+(function () {
+  const dots = document.querySelectorAll('.side-nav__dot');
+  if (!dots.length) return;
+
+  const items = Array.from(dots)
+    .map((dot) => ({ dot, section: document.getElementById(dot.dataset.section) }))
+    .filter((item) => item.section);
+  if (!items.length) return;
+
+  const setActive = (id) => {
+    dots.forEach((dot) => dot.classList.toggle('is-active', dot.dataset.section === id));
+  };
+
+  const update = () => {
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    if (atBottom) {
+      setActive(items[items.length - 1].dot.dataset.section);
+      return;
+    }
+    const centerY = window.innerHeight / 2;
+    let current = items[0];
+    items.forEach((item) => {
+      if (item.section.getBoundingClientRect().top <= centerY) current = item;
+    });
+    setActive(current.dot.dataset.section);
+  };
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
 if (!reduceMotion && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
     (entries) => {
