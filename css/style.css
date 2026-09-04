@@ -445,9 +445,12 @@ section {
   .callout {
     position: static;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    text-align: left;
     margin: 0 auto 12px;
   }
+  .callout--c .callout__label { text-align: left; }
   .callout__line { display: none; }
 }
 
@@ -575,6 +578,12 @@ section {
 }
 
 /* ===== Experience — timeline ===== */
+.timeline-label {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
 .timeline {
   padding: 8px 0 12px;
 }
